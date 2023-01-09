@@ -6,4 +6,4 @@ object HelloScala{
     {
         print("Hello Scala") 
     }
-}ß
+}
