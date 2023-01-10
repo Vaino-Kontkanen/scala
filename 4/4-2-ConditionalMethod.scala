@@ -11,3 +11,15 @@ Example output:
 false
 true
 */
+object TestMethod extends App{
+	def isValidString(x: String) ={
+		var length = x.length()
+		if(length >= 5 && length<=10){
+			println("true")
+		} else{
+			println("false")
+		}
+	}
+	isValidString("Test")
+	isValidString("SecondTest")
+}

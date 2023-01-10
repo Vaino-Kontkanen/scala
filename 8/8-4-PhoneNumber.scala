@@ -19,3 +19,18 @@ false
 false
 false
 */
+object PhoneCheck extends App{
+	val p = "\\+358-[0-9]{2}-[0-9]{5,7}".r
+	
+	def checkNumber(s:String)={
+		if (p.matches(s)){
+			println("true")
+		} else{
+			println("false")
+		}
+	}
+	checkNumber("+358-40-123324")
+	checkNumber("-358-40-123324")
+	checkNumber("+358-40-123789757")
+	checkNumber("+358-40-12A3324")
+}
